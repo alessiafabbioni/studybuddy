@@ -1,0 +1,30 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<h1>{{room.name}}</h1>
+
+<p>{{room.description}}</p>
+
+<hr>
+
+<div class="comment-wrapper">
+    <h3>Conversation</h3>
+    <br>
+    <hr>
+
+    {% for room_message in room_messages%}
+
+    <div>
+        <span>{{room_message.user}}  {{room_message.created|timesince}}</span>
+        <small>{{room_message.body}}</small>
+    </div>
+
+    {% endfor %}
+
+    <hr>
+
+</div>
+
+
+{% endblock content %}
