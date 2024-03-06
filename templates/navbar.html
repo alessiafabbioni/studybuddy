@@ -24,7 +24,7 @@
 
 
         <div class="header__user">
-          <a href="{% url 'user-profile' host.id}">
+          <a href="{% url 'user-profile' host.id %%}">
             <div class="avatar avatar--medium active">
               <img src="https://randomuser.me/api/portraits/men/37.jpg" />
             </div>
@@ -39,7 +39,7 @@
         </div> 
 
         <div class="dropdown-menu">
-          <a href="{% url 'user-profile' host.id}" class="dropdown-link"
+          <a href="{% url 'user-profile' user.id%}" class="dropdown-link"
             ><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
               <title>tools</title>
               <path
