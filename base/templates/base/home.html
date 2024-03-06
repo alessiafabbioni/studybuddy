@@ -14,9 +14,6 @@
           </div>
           
           <ul class="topics__list">
-            <li>
-              <a href="/" class="active">All <span>{{topics_count}}</span></a>
-            </li>
             {% for topic in topics %}
             <li>
               <a href="{%url 'home'%}?q={{topic.name}}">{{topic.name}}<span>{{topics_count}}</span></a>
