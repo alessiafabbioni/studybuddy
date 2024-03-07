@@ -98,8 +98,8 @@
         <!--   Start -->
         <div class="participants">
           <h3 class="participants__top">Participants <span>({{participants_count}} Joined)</span></h3>
-          {% for participant in participants %}
           <div class="participants__list scroll">
+            {% for participant in participants %}
             <a href="{% url 'user-profile' user.id %}" class="participant">
               <div class="avatar avatar--medium">
                 <img src="https://randomuser.me/api/portraits/men/37.jpg" />
@@ -109,7 +109,7 @@
                 <span>{{participant.username}}</span>
               </p>
             </a>
-          {% endfor %}
+            {% endfor %}
           </div>
         </div>
         <!--  End -->

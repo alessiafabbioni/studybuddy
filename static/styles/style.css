@@ -734,8 +734,8 @@ a {
 .activities {
   background: var(--color-dark);
   border-radius: 5px;
-  overflow: hidden;
-}
+  overflow: auto;
+  height: 100%;}
 
 .activities__header h2 {
   background-color: var(--color-dark-light);
